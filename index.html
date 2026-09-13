@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17131f">
+  <meta name="description" content="Joana's Language Hub — practical English coaching for leaders, executives and managers.">
+  <title>Joana's Language Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#" aria-label="Joana's Language Hub home">
+        <img src="assets/logo.png" alt="Joana's Language Hub" width="52" height="52">
+        <span>Joana's<br><strong>Language Hub</strong></span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <div class="nav-links">
+          <a href="#method" data-i18n="nav_method">The method</a>
+          <a href="#results" data-i18n="nav_results">Results</a>
+          <a href="#roadmap" data-i18n="nav_roadmap">Roadmap</a>
+        </div>
+        <div class="language-control" aria-label="Language controls">
+          <span class="language-globe" aria-hidden="true">◎</span>
+          <label class="auto-language">
+            <input id="auto-language" type="checkbox" checked>
+            <span data-i18n="language_auto">Auto</span>
+          </label>
+          <select id="language-switcher" aria-label="Choose language">
+            <option value="en">EN</option>
+            <option value="it">IT</option>
+            <option value="es">ES</option>
+            <option value="fr">FR</option>
+          </select>
+        </div>
+        <a href="#booking" class="button button-small" data-i18n="nav_book">Book a call <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow-row">
+            <span class="eyebrow" data-i18n="hero_badge">For CEOs, executives & managers</span>
+            <span class="live-dot"><i></i><span data-i18n="hero_available">6 spots available</span></span>
+          </div>
+          <h1 id="hero-title" data-i18n="hero_h1">Stop translating in your head. Lead in English with confidence.</h1>
+          <p class="hero-intro" data-i18n="hero_h2">A six-month program built around real work situations. No endless grammar lessons — just focused practice that brings your authority back.</p>
+          <div class="hero-actions">
+            <a href="#booking" class="button button-primary" data-i18n="hero_cta">Book your free activation call <span aria-hidden="true">↓</span></a>
+            <a href="#method" class="text-link" data-i18n="hero_secondary">See how it works <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <span>J</span><span>D</span><span>M</span><span>+</span>
+            </div>
+            <span data-i18n="hero_proof">Practical coaching for people who already know their work.</span>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="media-label"><span class="play-pulse">▶</span><span data-i18n="video_label">A message from Joana</span></div>
+          <div class="video-container">
+            <button class="video-play-button" id="video-play" type="button" aria-label="Play video">
+              <span class="play-icon" aria-hidden="true">▶</span>
+            </button>
+            <video id="intro-video" controls preload="metadata" playsinline poster="assets/poster.jpg">
+              <source src="assets/landing_page.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="video-caption-dock" aria-live="polite">
+              <span class="caption-language" id="caption-language">EN</span>
+              <p id="caption-text" data-i18n="caption_note">Captions will appear here as the video plays.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contrast-section section-block" aria-labelledby="contrast-title">
+        <div class="section-kicker" data-i18n="contrast_kicker">The real gap</div>
+        <h2 id="contrast-title" data-i18n="contrast_title">Your expertise is already there. English should not hide it.</h2>
+        <div class="contrast-grid">
+          <article class="contrast-card native-card">
+            <div class="card-topline"><span class="card-number">01</span><span class="card-status" data-i18n="card_native_status">This is you</span></div>
+            <h3 data-i18n="s3_left_title">In your native language: the leader</h3>
+            <ul>
+              <li data-i18n="s3_left_1">You manage high-stakes deals without hesitation.</li>
+              <li data-i18n="s3_left_2">You have full control of the room and your team.</li>
+              <li data-i18n="s3_left_3">You communicate complex ideas clearly.</li>
+            </ul>
+          </article>
+          <article class="contrast-card english-card">
+            <div class="card-topline"><span class="card-number">02</span><span class="card-status" data-i18n="card_english_status">The friction</span></div>
+            <h3 data-i18n="s3_right_title">In English: the block</h3>
+            <ul>
+              <li data-i18n="s3_right_1">Your mind races, but your voice goes quiet.</li>
+              <li data-i18n="s3_right_2">You fear the wrong words will make you sound junior.</li>
+              <li data-i18n="s3_right_3">You stay silent or ask someone else to translate.</li>
+            </ul>
+          </article>
+        </div>
+        <p class="anchor-statement" data-i18n="s3_anchor">This is not a grammar problem. It is a pressure and perfectionism problem.</p>
+      </section>
+
+      <section id="method" class="section-block method-section" aria-labelledby="method-title">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker" data-i18n="method_kicker">A better way to learn</div>
+            <h2 id="method-title" data-i18n="method_title">Practice the work you actually do.</h2>
+          </div>
+          <p data-i18n="method_intro">Every part of the program is designed to make confident English feel familiar before you need it in the room.</p>
+        </div>
+        <div class="pillar-grid">
+          <article class="pillar-card">
+            <span class="pillar-icon icon-violet" aria-hidden="true">↗</span>
+            <span class="step-label">01</span>
+            <h3 data-i18n="s4_p1_title">One-on-one coaching</h3>
+            <p data-i18n="s4_p1_desc">Work through your real budget meetings, client presentations and surprise Q&As. No theory for theory's sake — direct simulations.</p>
+          </article>
+          <article class="pillar-card featured-pillar">
+            <span class="pillar-icon icon-green" aria-hidden="true">◎</span>
+            <span class="step-label">02</span>
+            <h3 data-i18n="s4_p2_title">Conversation club</h3>
+            <p data-i18n="s4_p2_desc">A small weekly group of managers and executives. A protected space where mistakes are part of getting better.</p>
+          </article>
+          <article class="pillar-card">
+            <span class="pillar-icon icon-violet" aria-hidden="true">◌</span>
+            <span class="step-label">03</span>
+            <h3 data-i18n="s4_p3_title">Language Hub 24/7</h3>
+            <p data-i18n="s4_p3_desc">Keep practising between sessions with AI simulations for interviews, negotiations and presentations.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="results" class="section-block results-section" aria-labelledby="results-title">
+        <div class="results-card">
+          <div class="quote-mark" aria-hidden="true">“</div>
+          <div class="results-content">
+            <div class="section-kicker" data-i18n="results_kicker">A real shift</div>
+            <h2 id="results-title" data-i18n="s5_header">From freezing in English to closing international contracts.</h2>
+            <blockquote data-i18n="s5_quote">“Daniele is the CEO of several companies. He knew the grammar, but the pressure made him freeze. We removed the textbooks and simulated his real meetings. Today, he leads international negotiations, interviews and public talks entirely in English.”</blockquote>
+            <div class="tags">
+              <span class="tag" data-i18n="s5_tag1">Deals closed</span>
+              <span class="tag" data-i18n="s5_tag2">Zero textbooks</span>
+              <span class="tag" data-i18n="s5_tag3">Results in 6 months</span>
+            </div>
+          </div>
+          <div class="results-stamp"><strong>6</strong><span data-i18n="results_months">months<br>to momentum</span></div>
+        </div>
+      </section>
+
+      <section id="roadmap" class="section-block roadmap-section" aria-labelledby="roadmap-title">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker" data-i18n="roadmap_kicker">Your progression</div>
+            <h2 id="roadmap-title" data-i18n="roadmap_title">Six months. Three clear stages.</h2>
+          </div>
+          <span class="roadmap-badge" data-i18n="roadmap_badge">Built around your work</span>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-number">01</span>
+            <div><h3 data-i18n="s6_m12_title">Months 1–2: Activation & unlock</h3><p data-i18n="s6_m12_desc">A complete diagnosis. Unlock the vocabulary you already have and stop translating in your head.</p></div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-number">02</span>
+            <div><h3 data-i18n="s6_m34_title">Months 3–4: Consolidation & simulation</h3><p data-i18n="s6_m34_desc">Intensive work on your real meetings, company presentations and protected simulations.</p></div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-number">03</span>
+            <div><h3 data-i18n="s6_m56_title">Months 5–6: Autonomy & leadership</h3><p data-i18n="s6_m56_desc">Lead negotiations, handle objections and work in English without rehearsing every sentence first.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="booking" class="booking-section section-block" aria-labelledby="booking-title">
+        <div class="booking-card">
+          <div class="section-kicker" data-i18n="booking_kicker">Start here</div>
+          <h2 id="booking-title" data-i18n="s8_header">Take the first step.</h2>
+          <p class="sub-headline" data-i18n="s8_sub">15 minutes, one-to-one with Joana. Find where you get stuck and leave with a clear action plan — no pressure.</p>
+          <div class="booking-points">
+            <span>✓ <span data-i18n="booking_point_1">A focused 15-minute conversation</span></span>
+            <span>✓ <span data-i18n="booking_point_2">A practical next step</span></span>
+            <span>✓ <span data-i18n="booking_point_3">No obligation</span></span>
+          </div>
+          <div class="embed-container">
+            <iframe src="https://tidycal.com/joanaslanguagehub/activate-your-english" title="Book an activation call" loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <a class="brand footer-brand" href="#" aria-label="Joana's Language Hub home"><img src="assets/logo.png" alt="" width="42" height="42"><span>Joana's <strong>Language Hub</strong></span></a>
+        <p data-i18n="footer_copy">Practical English for people who lead.</p>
+        <div class="footer-links"><a href="https://www.linkedin.com/in/joana-nucci-393654106/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="#" data-i18n="footer_privacy">Privacy</a><a href="#" data-i18n="footer_terms">Terms</a></div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
